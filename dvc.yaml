@@ -34,7 +34,7 @@ stages:
       - BATCH_SIZE
       - AUGMENTATION
     outs:
-      - artifacts/training
+      - artifacts/training/trained_model.h5
 
   evaluation:
     cmd: python src/pipeline/stage_04_model_evaluation.py 
@@ -42,8 +42,7 @@ stages:
       - src/pipeline/stage_04_model_evaluation.py
       - config/config.yaml
       - artifacts/data_ingestion/Chest-CT-Scan-data
-      - artifacts/base_model
-      - artifacts/training
+      - artifacts/training/trained_model.h5
     params:
       - IMAGE_SIZE
       - BATCH_SIZE
