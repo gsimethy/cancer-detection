@@ -80,7 +80,7 @@ def load_json(path: Path) -> ConfigBox:
     return ConfigBox(content)
 
 @ensure_annotations
-def save_bin(path: Path, data: Any):
+def save_bin( data: Any,path: Path):
     """save binary file
 
     Args:
@@ -118,18 +118,18 @@ def get_size(path: Path) -> str:
     return f"File size of {path} is {size} KB"
 
 @ensure_annotations
-def decode_image(img_string: str, filename: Path):
+def decode_image(img_string, filename):
     """
     Converts image string to base64 format
     """
-    img_data=base64.b64encode(img_string)
+    img_data=base64.b64decode(img_string)
     with open(filename,'wb') as f:
         f.write(img_data)
         f.close()
     logger.info(f"Image succesfully decoded at location {filename}")
 
 @ensure_annotations
-def encode_image(filename:Path):
+def encode_image(filename):
     """
     Converts base64 format to image string
     """
