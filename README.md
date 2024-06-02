@@ -24,3 +24,12 @@ This repository contains an end-to-end pipeline for binary classification of ima
 
 - **Flask App Hosted on AWS**
   - Serve the trained model via a Flask application hosted on AWS, enabling easy access and scalability.
+ 
+- **Tech stack**
+  - Python
+  - Tensorflow
+  - DVC
+  - Mlflow
+  - Jenkins
+  - Git
+  - AWS
