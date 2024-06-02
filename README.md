@@ -28,6 +28,7 @@ This repository contains an end-to-end pipeline for binary classification of ima
 - **Tech stack**
   - Python
   - Tensorflow
+  - Flask
   - DVC
   - Mlflow
   - Jenkins
