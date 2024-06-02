@@ -31,6 +31,7 @@ This repository contains an end-to-end pipeline for binary classification of ima
   - Flask
   - DVC
   - Mlflow
+  - Docker
   - Jenkins
   - Git
   - AWS
